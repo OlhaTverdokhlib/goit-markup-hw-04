@@ -19,6 +19,7 @@
   --button-hover: #188ce8;
   --button-shadow: rgba(0, 4, 4, 0.15);
   --header-line-color: #ECECEC;
+  --border-color: #eeeeee;
 }
 
 *,
@@ -87,10 +88,10 @@ p {
   color: var(--black-color-logo);
 }
 
-.logo:hover,
+/* .logo:hover,
 .logo:focus {
   text-decoration: underline;
-}
+} */
 
 .page-header {
   display: flex;
@@ -133,7 +134,7 @@ p {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
-  text-decoration: underline;
+ 
 }
 
 .current {
@@ -160,7 +161,7 @@ p {
 .mail:hover,
 .mail:focus {
   color: var(--accent-color);
-  text-decoration: underline;
+  
 }
 
 .phone {
@@ -171,7 +172,7 @@ p {
 .phone:hover,
 .phone:focus {
   color: var(--accent-color);
-  text-decoration: underline;
+  
 }
 
 .hero {
@@ -196,6 +197,8 @@ p {
 
 .button {
   display: inline-block;
+  width: 216px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -236,6 +239,7 @@ p {
 .features-title {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
   text-transform: uppercase;
@@ -273,10 +277,12 @@ p {
   display: flex;
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team-title {
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 10px;
   font-weight: 500;
   line-height: 1.19;
@@ -285,7 +291,7 @@ p {
 }
 
 .team-member {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -305,6 +311,11 @@ p {
 
 .section.coworkers {
   background-color: var(--grey-background-color);
+}
+
+.team-card{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .logo-down {
@@ -429,24 +440,37 @@ p {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
+  /* background-color: tomato; */
 }
 
 .project-title {
-  margin: 20px 24px 4px 24px;
   font-size: 18px;
   line-height: 2;
+  font-weight: 700;
   letter-spacing: 0.06em;
+  /* background-color: greenyellow; */
+}
+
+.project-card {
+padding: 20px 24px 20px 24px;
+border-right: 1px solid var(--border-color);
+border-left: 1px solid var(--border-color);
+border-bottom: 1px solid var(--border-color);
+/* background-color: blueviolet; */
 }
 
 .project-type {
-  margin: 0 24px 20px 24px;
+  /* margin: 0 24px 20px 24px; */
+  margin-top: 4px; 
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   color: var(--secondary-text-color);
+  /* background-color: yellow; */
 }
 
 .flex-container {
   padding-left: 0;
+  
 }
 
 .container.portfolio {
@@ -455,12 +479,16 @@ p {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 0;
+  
+  
 }
 
 .flex-element {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  background-color: var(--white-color);
+  /* background-color: orange */
 }
 
 .flex-element:nth-child(3n) {
@@ -472,5 +500,9 @@ p {
 }
 
 .border {
-  border-bottom: 1px solid #eeeeee;
+  border: 1px solid var(--border-color);
+}
+
+.photo {
+  display: block;
 }
